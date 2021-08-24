@@ -1,0 +1,210 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.container-fluid{
+    padding: 3% 15% 8%;
+}
+
+#title{
+    background-color: #ff4c68;
+    color: white;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+    font-size: 3.5rem;
+}
+
+h2{
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+/* Navbar */
+
+.navbar{
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* Download buttons */
+.mybtn{
+    margin: 5% 3% 5% 0;
+}
+
+/* Phone image */
+.phone{
+    transform: rotate(25deg);
+    width: 60%;
+    /* z-index: 0; */
+    position: absolute;
+    right: 30%;
+}
+
+/* Features */
+
+#features{
+    padding: 100px 0 50px;
+    background-color: white;
+    /*Explicitly mention white bg because the default is see-through and z-stacking it above will not help*/
+    /* z-index: 1; */
+    /* Regardless of specifying the z-order the image is still covered. Refer the stacking sheet for other factors that affect stacking order*/
+    position: relative;
+}
+
+.feature-box{
+    text-align: center;
+}
+.feature-box h3{
+    font-weight: 700;
+}
+
+.feature-box p{
+    padding: 0 30px;
+    color: #8f8f8f;
+    margin-bottom: 40px;
+}
+
+.feature-icon{
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    color: #ef8172;
+}
+
+.feature-icon:hover{
+    color: #ff4c68;
+}
+
+/* Testimonial Section */
+
+#testimonials{
+    background-color: #ef8172;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial-img{
+    width: 10%;
+    border-radius: 100%;
+    margin-right:20px;
+}
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.press-img {
+    width: 15%;
+    margin: 15px 15px 20px;
+}
+
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+
+/* Pricing */
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+
+}
+
+.pricing-box{
+    padding: 3% 2%;
+}
+
+
+
+
+
+
+/* Call to Action */
+
+#cta{
+    text-align: center;
+    padding: 7% 25%;
+    background-color: #ff4c68;
+}
+
+#cta h3{
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.cta-btn{
+    margin: 0 20px;
+}
+
+/* Footer */
+
+#footer{
+    background-color: white;
+    padding: 5%;
+    text-align: center;
+    color: #8f8f8f;
+}
+
+.footer-icon{
+    margin: 15px 10px;
+    color: black;
+}
+
+@media (max-width : 1044px){
+    
+    .phone{
+        position: static;
+        transform: rotate(0deg);
+        margin-top: 40px;
+    }
+
+    #title{
+        text-align: center;
+    }
+}
+
+@media (max-width : 824px){
+
+    #cta{
+        padding: 7% 15%;
+    }
+    
+}
+
+@media (max-width : 593px){
+
+    #cta{
+        padding: 7% 10%;
+    }
+    
+    .cta-btn{
+        margin: 0px 20px 20px;
+    }
+}
